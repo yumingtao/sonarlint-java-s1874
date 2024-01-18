@@ -43,7 +43,7 @@ public class CommonException extends RuntimeException {
 
         ObjectNode rootNode = objectMapper.createObjectNode();
         rootNode.set(this.getClass().getSimpleName(), detailsNode);
-        return  rootNode;
+        return rootNode;
     }
 
     private <T> JsonNode fromCollection(Collection<T> collection) {
